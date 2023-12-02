@@ -1,12 +1,7 @@
-import './index.css'
+import Home from './components/Home'
 
-const Message = props => {
-  const {isLoggedIn} = props
+import './App.css'
 
-  if (isLoggedIn) {
-    return <h1 className="message">Welcome User</h1>
-  }
-  return <h1 className="message">Please Login</h1>
-}
+const App = () => <Home />
 
-export default Message
+export default App
